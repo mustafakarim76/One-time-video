@@ -1,0 +1,18 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Exclusive Video Access</title>
+    <script>
+        // Check if user has already accessed
+        if (localStorage.getItem("video_accessed")) {
+            document.write("<h2>Access Denied</h2><p>You have already viewed this video.</p>");
+        } else {
+            localStorage.setItem("video_accessed", "true");
+        }
+    </script>
+</head>
+<body>
+    <h2>Exclusive Video Access</h2>
+    <p>Watch the video below. This page will not be accessible again.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YWd2v8Uh6SU?autoplay=1" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
